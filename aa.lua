@@ -7,8 +7,8 @@ Example:
     return {
         Pay("A", "A B C", 60), -- A paid dinner for A&B&C (A+40 B-20 C-20)
         Pay("B", "C", 10), -- B bought something for C (B+10 C-10)
-        Pay("B", "A", 10), -- B repaid A (B-10 A+10)
-        Pay("C", "A", 30), -- C repaid A (C-30 A+30)
+        Pay("B", "A", 10), -- B repaid A (B+10 A-10)
+        Pay("C", "A", 30), -- C repaid A (C+30 A-30)
     }
 ]]
 if #arg == 0 then return print(help) end
